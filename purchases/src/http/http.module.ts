@@ -2,7 +2,7 @@ import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { GraphQLModule } from '@nestjs/graphql';
 import { DatabaseModule } from '../database/database.module';
-import { TestResolver } from './test.resolver';
+import { ProductResolver } from './graphql/resolvers/products.resolver';
 import path from 'path';
 import { ApolloDriver } from '@nestjs/apollo';
 @Module({
@@ -16,7 +16,7 @@ import { ApolloDriver } from '@nestjs/apollo';
     })
   ],
   providers:[
-    TestResolver
+    ProductResolver
   ]
 })
 export class HttpModule {}

@@ -2,7 +2,7 @@ import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { GraphQLModule } from '@nestjs/graphql';
 import { DatabaseModule } from '../database/database.module';
-import { TestResolver } from './test.resolver';
+import { TestResolver } from './graphql/resolvers/test.resolver';
 import path from 'path';
 import { ApolloDriver } from '@nestjs/apollo';
 @Module({
