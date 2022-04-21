@@ -26,4 +26,6 @@ export class ProductResolver {
     ){
         return this.productService.createProduct(data)
     }
+
+    
 }
