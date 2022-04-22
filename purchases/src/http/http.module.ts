@@ -8,7 +8,7 @@ import { ApolloDriver } from '@nestjs/apollo';
 import { ProductService } from '../services/products.service';
 import { PurchasesResolver } from './graphql/resolvers/purchases.resolver';
 import { PurchaseServices } from '../services/purchases.service';
-import { CustomerService } from '../services/customer.service';
+import { CustomersService } from '../services/customer.service';
 @Module({
   imports: [
     ConfigModule.forRoot(),
@@ -25,7 +25,7 @@ import { CustomerService } from '../services/customer.service';
    
     ProductService,
     PurchaseServices,
-    CustomerService
+    CustomersService
    
   ]
 })
