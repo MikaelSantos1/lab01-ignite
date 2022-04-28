@@ -13,6 +13,11 @@ async function bootstrap() {
       }
     }
   })
-  await app.listen(3334);
+  app.startAllMicroservices().then(()=>{
+    console.log('[Classromm] microservice running')
+  })
+   app.listen(3334).then(()=>{
+     console.log('[Clasroom] HTTP server running')
+   })
 }
 bootstrap();
